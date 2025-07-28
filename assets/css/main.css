@@ -4483,6 +4483,149 @@ input, select, textarea {
 
 		}
 
+/* Custom Skills Section Styles */
+.skills-container {
+	margin-top: 2rem;
+}
+
+.skill-item {
+	margin-bottom: 2rem;
+	position: relative;
+}
+
+.skill-item h4 {
+	font-size: 1.1rem;
+	font-weight: 600;
+	margin-bottom: 0.5rem;
+	color: #212931;
+}
+
+.skill-bar {
+	background-color: rgba(255, 255, 255, 0.1);
+	height: 8px;
+	border-radius: 4px;
+	position: relative;
+	overflow: hidden;
+}
+
+.skill-progress {
+	background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+	height: 100%;
+	border-radius: 4px;
+	transition: width 2s ease-in-out;
+	position: relative;
+}
+
+.skill-progress::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background-image: linear-gradient(
+		-45deg,
+		rgba(255, 255, 255, .2) 25%,
+		transparent 25%,
+		transparent 50%,
+		rgba(255, 255, 255, .2) 50%,
+		rgba(255, 255, 255, .2) 75%,
+		transparent 75%,
+		transparent
+	);
+	background-size: 50px 50px;
+	animation: move 2s linear infinite;
+}
+
+@keyframes move {
+	0% {
+		background-position: 0 0;
+	}
+	100% {
+		background-position: 50px 50px;
+	}
+}
+
+.skill-percent {
+	position: absolute;
+	right: 0;
+	top: -1.5rem;
+	font-size: 0.9rem;
+	font-weight: 600;
+	color: #667eea;
+}
+
+/* Enhanced date styling */
+.date {
+	background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+	color: white;
+	padding: 0.3rem 0.8rem;
+	border-radius: 15px;
+	font-size: 0.8rem;
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	display: inline-block;
+	margin-bottom: 1rem;
+}
+
+/* Smooth scrolling for navigation */
+html {
+	scroll-behavior: smooth;
+}
+
+/* Enhanced button hover effects */
+.button:hover {
+	transform: translateY(-2px);
+	box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+	transition: all 0.3s ease;
+}
+
+/* Improved accessibility for links */
+a[title]:hover::after {
+	content: attr(title);
+	position: absolute;
+	bottom: 100%;
+	left: 50%;
+	transform: translateX(-50%);
+	background: rgba(0,0,0,0.8);
+	color: white;
+	padding: 0.5rem;
+	border-radius: 4px;
+	font-size: 0.8rem;
+	white-space: nowrap;
+	z-index: 1000;
+}
+
+/* Enhanced project cards */
+.posts article {
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.posts article:hover {
+	transform: translateY(-5px);
+	box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+/* Responsive improvements */
+@media screen and (max-width: 736px) {
+	.skills-container {
+		margin-top: 1rem;
+	}
+	
+	.skill-item {
+		margin-bottom: 1.5rem;
+	}
+	
+	.skill-item h4 {
+		font-size: 1rem;
+	}
+	
+	.skill-percent {
+		font-size: 0.8rem;
+	}
+}
+
 /* Nav Panel */
 
 	#navPanelToggle {
@@ -4687,3 +4830,146 @@ input, select, textarea {
 		}
 
 	}
+
+/* Custom Skills Section Styles */
+.skills-container {
+	margin-top: 2rem;
+}
+
+.skill-item {
+	margin-bottom: 2rem;
+	position: relative;
+}
+
+.skill-item h4 {
+	font-size: 1.1rem;
+	font-weight: 600;
+	margin-bottom: 0.5rem;
+	color: #ffffff;
+}
+
+.skill-bar {
+	background-color: rgba(255, 255, 255, 0.1);
+	height: 8px;
+	border-radius: 4px;
+	position: relative;
+	overflow: hidden;
+}
+
+.skill-progress {
+	background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+	height: 100%;
+	border-radius: 4px;
+	transition: width 2s ease-in-out;
+	position: relative;
+}
+
+.skill-progress::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background-image: linear-gradient(
+		-45deg,
+		rgba(255, 255, 255, .2) 25%,
+		transparent 25%,
+		transparent 50%,
+		rgba(255, 255, 255, .2) 50%,
+		rgba(255, 255, 255, .2) 75%,
+		transparent 75%,
+		transparent
+	);
+	background-size: 50px 50px;
+	animation: move 2s linear infinite;
+}
+
+@keyframes move {
+	0% {
+		background-position: 0 0;
+	}
+	100% {
+		background-position: 50px 50px;
+	}
+}
+
+.skill-percent {
+	position: absolute;
+	right: 0;
+	top: -1.5rem;
+	font-size: 0.9rem;
+	font-weight: 600;
+	color: #667eea;
+}
+
+/* Enhanced date styling */
+.date {
+	background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+	color: white;
+	padding: 0.3rem 0.8rem;
+	border-radius: 15px;
+	font-size: 0.8rem;
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	display: inline-block;
+	margin-bottom: 1rem;
+}
+
+/* Smooth scrolling for navigation */
+html {
+	scroll-behavior: smooth;
+}
+
+/* Enhanced button hover effects */
+.button:hover {
+	transform: translateY(-2px);
+	box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+	transition: all 0.3s ease;
+}
+
+/* Improved accessibility for links */
+a[title]:hover::after {
+	content: attr(title);
+	position: absolute;
+	bottom: 100%;
+	left: 50%;
+	transform: translateX(-50%);
+	background: rgba(0,0,0,0.8);
+	color: white;
+	padding: 0.5rem;
+	border-radius: 4px;
+	font-size: 0.8rem;
+	white-space: nowrap;
+	z-index: 1000;
+}
+
+/* Enhanced project cards */
+.posts article {
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.posts article:hover {
+	transform: translateY(-5px);
+	box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+/* Responsive improvements */
+@media screen and (max-width: 736px) {
+	.skills-container {
+		margin-top: 1rem;
+	}
+	
+	.skill-item {
+		margin-bottom: 1.5rem;
+	}
+	
+	.skill-item h4 {
+		font-size: 1rem;
+	}
+	
+	.skill-percent {
+		font-size: 0.8rem;
+	}
+}
